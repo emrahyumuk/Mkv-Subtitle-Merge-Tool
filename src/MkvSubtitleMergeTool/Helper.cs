@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MkvMergeTool {
+namespace MkvSubtitleMergeTool {
     public static class Helper {
 
         public static void MkvMerge(string videoInputPath, string subtitleInputPath, string mkvOutputPath) {

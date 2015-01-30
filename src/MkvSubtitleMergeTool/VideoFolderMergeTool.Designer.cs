@@ -1,4 +1,4 @@
-﻿namespace MkvMergeTool {
+﻿namespace MkvSubtitleMergeTool {
     partial class VideoFolderMergeTool {
         /// <summary>
         /// Required designer variable.

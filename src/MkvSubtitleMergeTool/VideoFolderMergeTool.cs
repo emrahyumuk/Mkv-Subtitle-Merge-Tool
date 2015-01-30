@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MkvMergeTool {
+namespace MkvSubtitleMergeTool {
     public partial class VideoFolderMergeTool : Form {
         public VideoFolderMergeTool() {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace MkvMergeTool {
                 var fileName = Path.GetFileNameWithoutExtension(inputVideoPath);
                 if (fileName == null || outputVideoFileNames.Contains(fileName)) continue;
                 var subtitlePath = Path.Combine(txtInputFolderPath.Text, fileName) + ".srt";
-                if (!Directory.Exists(subtitlePath)) continue;
+                if (!File.Exists(subtitlePath)) continue;
                 var outputFilePath = Path.Combine(txtOutputFolderPath.Text, fileName) + ".mkv";
 
                 Helper.MkvMerge(inputVideoPath, subtitlePath, outputFilePath);

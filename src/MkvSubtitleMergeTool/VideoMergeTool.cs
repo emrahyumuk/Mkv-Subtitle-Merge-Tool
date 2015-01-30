@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MkvMergeTool {
+namespace MkvSubtitleMergeTool {
     public partial class VideoMergeTool : Form {
         public VideoMergeTool() {
             InitializeComponent();
