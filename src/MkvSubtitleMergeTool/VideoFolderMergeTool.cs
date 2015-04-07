@@ -30,6 +30,7 @@ namespace MkvSubtitleMergeTool {
                 var outputFilePath = Path.Combine(txtOutputFolderPath.Text, fileName) + ".mkv";
 
                 Helper.MkvMerge(inputVideoPath, subtitlePath, outputFilePath);
+                MessageBox.Show("Mkv merge completed");
             }
 
         }

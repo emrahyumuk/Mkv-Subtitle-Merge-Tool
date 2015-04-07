@@ -21,6 +21,7 @@ namespace MkvSubtitleMergeTool {
             startInfo.Arguments = parameters;
             process.StartInfo = startInfo;
             process.Start();
+            process.WaitForExit();
         }
 
         public static IEnumerable<string> GetVideoFiles(string folderPath) {
